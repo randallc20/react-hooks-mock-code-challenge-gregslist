@@ -37,10 +37,10 @@
       "location": "Bay Ridge"
     },
     {
-      "id": 7,
-      "description": "Treadmill Parts For Free",
-      "image": "./images/treadmill.jpg",
-      "location": "East Flatbush"
+      "description": "test1",
+      "location": "Houston",
+      "image": "https://www.thespruceeats.com/thmb/pfDcqBlFZMi4N7y3PmdblSlnPSw=/900x0/filters:no_upscale():max_bytes(150000):strip_icc()/RiedelExtremeMartiniGlass-e641b3dc93b8493aa50f93c79b786653.jpg",
+      "id": 7
     }
   ]
 }

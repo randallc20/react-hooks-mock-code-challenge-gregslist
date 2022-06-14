@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 
-function Search() {
+function Search({setSearchValue, onSort, checked}) {
+  const [search, setSearch] = useState("");
+
   function handleSubmit(e) {
     e.preventDefault();
-    console.log("submitted");
+    setSearchValue(search)
   }
 
   return (
@@ -12,10 +14,17 @@ function Search() {
         type="text"
         id="search"
         placeholder="search free stuff"
-        value={""}
-        onChange={(e) => console.log(e.target.value)}
+        onChange={(e) => setSearch(e.target.value)}
       />
       <button type="submit">🔍</button>
+      <label>Sort by Location
+        <input
+          type="checkbox"
+          id="checkbox"
+          checked={checked}
+          onChange={onSort}
+        />
+      </label>
     </form>
   );
 }
